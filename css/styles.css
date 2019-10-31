@@ -15,6 +15,10 @@ a {
   color: #000000;
 }
 
+a:hover {
+  color: #f14a58;
+}
+
 ul,
 li {
   list-style: none;
@@ -135,7 +139,7 @@ header {
   bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     width: 48rem;
     height: 7.5rem;
@@ -197,4 +201,58 @@ header {
     bottom: 0;
     margin: 0;
   }
+
+  .header__dropdown {
+    display: block;
+  }
 }
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 23.438rem;
+    height: 4.375rem;
+  }
+
+  .header__logo a {
+    content: 'TL';
+    width: 1.75rem;
+    height: 1.125rem;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    text-transform: uppercase;
+    letter-spacing: 0.045rem;
+  }
+}
+
+/* DROP MENU */
+.header__nav-drop {
+  display: none;
+  background-color: white;
+  height: 100%;
+  width: 35px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.header__dropdown .icon {
+  transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  margin-top: 23px;
+}
+
+.nav-drop-icon {
+  display: block;
+  width: 0.875rem;
+  height: 0.75rem;
+  background-position: left;
+  background-size: cover;
+  background-image: url(../img/ico_menu.svg);
+}
+
+.nav-drop-icon-close {
+  background-image: url(../img/ico_close.svg);
+}
+
+/* DROP MENU */
