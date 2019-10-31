@@ -1,0 +1,200 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  width: 81.25rem;
+  height: 7.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.header__top-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 0;
+  width: 56.938rem;
+  color: #000000;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.056rem;
+}
+
+.header__signup {
+  margin: 0;
+  width: 6.875rem;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 4.063rem;
+  letter-spacing: 0.023rem;
+}
+
+.header__bag {
+  margin: 0;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 4.063rem;
+  letter-spacing: 0.023rem;
+  position: relative;
+}
+
+.header__bag::after {
+  content: '';
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  background-image: url(../img/ico_bag.png);
+  top: 25px;
+  left: -27px;
+}
+
+.header__down-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.header__nav {
+  margin: 0;
+  width: 59.438rem;
+  height: 0.813rem;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  /* width: 38.938rem; */
+}
+
+.header__nav-items {
+  margin: 0;
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.024rem;
+}
+
+.header__search {
+  padding-left: 110px;
+  color: #a8a8a8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.023rem;
+  position: relative;
+}
+
+.header__search input {
+  width: 7.375rem;
+  padding: 5px;
+  border: none;
+  border-bottom: 0.125rem solid #e5e5e5;
+}
+
+.header__search::after {
+  content: '';
+  display: block;
+  width: 0.813rem;
+  position: absolute;
+  background-image: url(../img/ico_search.svg);
+  background-repeat: no-repeat;
+  top: 26px;
+  left: 210px;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 48rem;
+    height: 7.5rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .header__logo {
+    width: 27.75rem;
+    height: 1.688rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.049rem;
+  }
+
+  .header__signup {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 4.063rem;
+    letter-spacing: 0.023rem;
+  }
+
+  .header__nav {
+    margin: 0;
+    width: 39rem;
+  }
+
+  .header__nav-list {
+    width: 38.938rem;
+  }
+
+  .header__nav-items {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.023rem;
+  }
+
+  .header__search input {
+    display: none;
+    margin: 0;
+  }
+
+  .header__search::after {
+    content: '';
+    display: block;
+    width: 0.813rem;
+    height: 0.813rem;
+    position: absolute;
+    background-image: url(../img/ico_search.svg);
+    background-repeat: no-repeat;
+    top: -10px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
