@@ -95,6 +95,17 @@ header {
   height: 0.813rem;
 }
 
+.header__nav-btn {
+  width: 40px;
+  display: none;
+}
+
+.header__nav-btn div {
+  height: 5px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+
 .header__nav-list {
   display: flex;
   justify-content: space-between;
@@ -201,10 +212,6 @@ header {
     bottom: 0;
     margin: 0;
   }
-
-  .header__dropdown {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -213,7 +220,16 @@ header {
     height: 4.375rem;
   }
 
-  .header__logo a {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__top-wrap::before {
     content: 'TL';
     width: 1.75rem;
     height: 1.125rem;
@@ -225,34 +241,13 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.045rem;
   }
-}
 
-/* DROP MENU */
-.header__nav-drop {
-  display: none;
-  background-color: white;
-  height: 100%;
-  width: 35px;
-  border-left: 1px solid #e5e5e5;
-}
+  .header__nav-btn {
+    display: block;
+  }
 
-.header__dropdown .icon {
-  transform: translateX(150%);
-  -ms-transform: translateX(150%);
-  margin-top: 23px;
-}
+  .header__down-wrap {
+    display: none;
+  }
 
-.nav-drop-icon {
-  display: block;
-  width: 0.875rem;
-  height: 0.75rem;
-  background-position: left;
-  background-size: cover;
-  background-image: url(../img/ico_menu.svg);
 }
-
-.nav-drop-icon-close {
-  background-image: url(../img/ico_close.svg);
-}
-
-/* DROP MENU */
