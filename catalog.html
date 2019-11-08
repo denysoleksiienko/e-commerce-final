@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__wrap-top">
+          <div class="header__logo"><a href="starts.html">Template</a></div>
+          <div class="header__signup"><a href="#">E-mail sing up</a></div>
+          <div class="header__bag"><a href="shopping-bag.html">Bag (<span id="bagCount">0</span>)</a></div>
+          <div class="header__nav-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="header__wrap-bottom">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-items"><a href="catalog.html">Women</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Men</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Handbags</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Accessories</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Sale</a></li>
+              <li class="header__nav-items"><a href="catalog.html">New Arrivals</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Clearance</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Store Locator</a></li>
+            </ul>
+          </nav>
+          <div class="header__search">
+            <input type="search" id="search" placeholder="Style Name">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="filter" id="filter">
+      <div class="container">
+        <div class="filter__wrap">
+
+          <div class="filter__category filter__category--1" id="fashion" data-category="Fashion">
+            <h4 class="filter__name">Fashion</h4>
+            <span class="filter__icon"></span>
+            <h4 class="filter__checked" id="fashion__checked">Fashion</h4>
+            <div class="filter__options">
+              
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_fashion">Not selected</label>
+                  <input type="radio" name="fashion" checked value="Not selected" id="not_fashion">
+                </li>
+                <li class="filter__option">
+                  <label for="nail_the_90s">Nail the 90s</label>
+                  <input type="radio" name="fashion" value="Nail the 90s" id="nail_the_90s">
+                </li>
+                <li class="filter__option">
+                  <label for="casual_style">Casual style</label>
+                  <input type="radio" name="fashion" value="Casual style" id="casual_style">
+                </li>
+                <li class="filter__option">
+                  <label for="new_look">New look</label>
+                  <input type="radio" name="fashion" value="New look" id="new_look">
+                </li>
+                <li class="filter__option">
+                  <label for="sport">Sport</label>
+                  <input type="radio" name="fashion" value="Sport" id="sport">
+                </li>
+                <li class="filter__option">
+                  <label for="vintage">Vintage</label>
+                  <input type="radio" name="fashion" value="Vintage" id="vintage">
+                </li>
+                <li class="filter__option">
+                  <label for="classical_style">Classical style</label>
+                  <input type="radio" name="fashion" value="Classical style" id="classical_style">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter__category" id="product_type" data-category="Product type">
+            <h4 class="filter__name">Product type</h4>
+            <span class="filter__icon"></span>
+            <h4 class="filter__checked" id="product_type__checked">Product type</h4>
+            <div class="filter__options">
+
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_product_type">Not selected</label>
+                  <input type="radio" name="product_type" checked value="Not selected" id="not_product_type">
+                </li>
+                <li class="filter__option">
+                  <label for="coats_&_jackets">Coats & Jackets</label>
+                  <input type="radio" name="product_type" value="Coats & Jackets" id="coats_&_jackets">
+                </li>
+                <li class="filter__option">
+                  <label for="dresses">Dresses</label>
+                  <input type="radio" name="product_type" value="Dresses" id="dresses">
+                </li>
+                <li class="filter__option">
+                  <label for="jersey_tops">Jersey Tops</label>
+                  <input type="radio" name="product_type" value="Jersey Tops" id="jersey_tops">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter__category" id="color" data-category="Color">
+            <h4 class="filter__name ">Color</h4>
+            <span class="filter__icon"></span>
+            <h4 class="filter__checked " id="color__checked">Color</h4>
+            <div class="filter__options">
+
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_color">Not selected</label>
+                  <input type="radio" name="color" checked value="Not selected" id="not_color">
+                </li>
+                <li class="filter__option">
+                  <label for="black">Black</label>
+                  <input type="radio" name="color" value="Black" id="black">
+                </li>
+                <li class="filter__option">
+                  <label for="blue">Blue</label>
+                  <input type="radio" name="color" value="Blue" id="blue">
+                </li>
+                <li class="filter__option">
+                  <label for="red">Red</label>
+                  <input type="radio" name="color" value="Red" id="red">
+                </li>
+                <li class="filter__option">
+                  <label for="green">Green</label>
+                  <input type="radio" name="color" value="Green" id="green">
+                </li>
+                <li class="filter__option">
+                  <label for="golden">Golden</label>
+                  <input type="radio" name="color" value="Golden" id="golden">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter__category" id="brand" data-category="Brand">
+            <h4 class="filter__name">Brand</h4>
+            <span class="icon filter__icon"></span>
+            <h4 class="filter__checked" id="brand__checked">Brand</h4>
+            <div class="filter__options">
+
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_brand">Not selected</label>
+                  <input type="radio" name="brand" checked value="Not selected" id="not_brand">
+                </li>
+                <li class="filter__option">
+                  <label for="chi_chi_london">Chi Chi London</label>
+                  <input type="radio" name="brand" value="Chi Chi London" id="chi_chi_london">
+                </li>
+                <li class="filter__option">
+                  <label for="antipodium">Antipodium</label>
+                  <input type="radio" name="brand" value="Antipodium" id="antipodium">
+                </li>
+                <li class="filter__option">
+                  <label for="adidas">Adidas</label>
+                  <input type="radio" name="brand" value="Adidas" id="adidas">
+                </li>
+                <li class="filter__option">
+                  <label for="new_balance">New Balance</label>
+                  <input type="radio" name="brand" value="New Balance" id="new_balance">
+                </li>
+                <li class="filter__option">
+                  <label for="river_island">River Island</label>
+                  <input type="radio" name="brand" value="River Island" id="river_island">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter__category" id="size" data-category="Size">
+            <h4 class="filter__name">Size</h4>
+            <span class="filter__icon"></span>
+            <h4 class="filter__checked" id="size__checked">Size</h4>
+            <div class="filter__options">
+
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_size">Not selected</label>
+                  <input type="radio" name="size" checked value="Not selected" id="not_size">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_2">UK 2</label>
+                  <input type="radio" name="size" value="UK 2" id="uk_2">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_18">UK 18</label>
+                  <input type="radio" name="size" value="UK 18" id="uk_18">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_18l">UK 18L</label>
+                  <input type="radio" name="size" value="UK 18L" id="uk_18l">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_20">UK 20</label>
+                  <input type="radio" name="size" value="UK 20" id="uk_20">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_20l">UK 20L</label>
+                  <input type="radio" name="size" value="UK 20L" id="uk_20l">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_20s">UK 20S</label>
+                  <input type="radio" name="size" value="UK 20S" id="uk_20s">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_22s">UK 22S</label>
+                  <input type="radio" name="size" value="UK 22S" id="uk_22s">
+                </li>
+                <li class="filter__option">
+                  <label for="uk_22">UK 22</label>
+                  <input type="radio" name="size" value="UK 22" id="uk_22">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter__category" id="price_range" data-category="Price range">
+            <h4 class="filter__name">Price range</h4>
+            <span class="filter__icon"></span>
+            <h4 class="filter__checked" id="price_range__checked">Price range</h4>
+            <div class="filter__options">
+
+              <ul class="filter__option-list">
+                <li class="filter__option">
+                  <label for="not_price_range">Not selected</label>
+                  <input type="radio" name="price_range" checked value="Not selected" id="not_price_range">
+                </li>
+                <li class="filter__option">
+                  <label for="to_99">To &#163;99</label>
+                  <input type="radio" name="price_range" value="To £99" id="to_99">
+                </li>
+                <li class="filter__option">
+                  <label for="100_299">&#163;100-&#163;299</label>
+                  <input type="radio" name="price_range" value="£100-£299" id="100_299">
+                </li>
+                <li class="filter__option">
+                  <label for="from_300">From &#163;300</label>
+                  <input type="radio" name="price_range" value="From £300" id="from_300">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <span class="filter__icon" id="filter__drop"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="catalog">
+      <div class="container">
+        <div class="arrivals__wrap-card">
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Only_Skinny_Jeans.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Only Skinny Jeans</p>
+              <p class="item__info-price">&#163; 65.50</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Neck_Knitted_Jumper.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Neck Knitted Jumper</p>
+              <p class="item__info-price">&#163; 76.25</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Turtle_Neck_Jumper_in_Rib.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Turtle Neck Jumper in Rib</p>
+              <p class="item__info-price">&#163; 130.25</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/With_Patchwork_Crochet.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">With Patchwork Crochet</p>
+              <p class="item__info-price">&#163; 80.60</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="catalog__banner">
+      <div class="container">
+        <h1>Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</h1>
+        <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends
+          at
+          11:59 GMT on March 1st 2019</p>
+      </div>
+    </article>
+
+
+    <section class="catalog">
+      <div class="container">
+        <div class="arrivals__wrap-card">
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Levi’s_Jeans_for_women.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Levi’s Jeans for women</p>
+              <p class="item__info-price">&#163; 95.50</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Boyfriend_T-Shirt_with_Bohemian_Print.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Boyfriend T-Shirt with
+                Bohemian Print</p>
+              <p class="item__info-price">&#163; 90.00</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Colour_Block.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Colour Block</p>
+              <p class="item__info-price">&#163; 550.50</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Monki_Festval_Knitted.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Monki Festval Knitted</p>
+              <p class="item__info-price">&#163; 24.75</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="arrivals__wrap-card">
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Oversized_Cardigan.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Oversized Cardigan</p>
+              <p class="item__info-price">&#163; 90.00</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Paul_&_Joe_Sister_Jumper_with_Neon_Trims.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Paul & Joe Sister Jumper
+                with Neon Trims</p>
+              <p class="item__info-price">&#163; 19.75</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/Turtle_Neck_Jumper_in_Rib.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">Turtle Neck Jumper in Rib</p>
+              <p class="item__info-price">&#163; 130.25</p>
+            </div>
+          </div>
+          <div class="arrivals__card">
+            <div class="arrivals-img">
+              <a href="catalog.html">
+                <img src="img/With_Patchwork_Crochet.jpg" alt="">
+              </a>
+            </div>
+            <div class="item__info">
+              <p class="item__info-name">With Patchwork Crochet</p>
+              <p class="item__info-price">&#163; 80.60</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="arrivals__button"><a href="#">Show more</a></div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <!-- <div class="container"> -->
+        <div class="promo__catalog-list">
+          <article class="promo-catalog-item">
+            <a href="#">
+              <header>
+                <h3>Adidas Blue</h3>
+                <p>For men</p>
+              </header>
+              <img src="img/Adidas_Blue.jpg" alt="">
+            </a>
+          </article>
+          <article class="promo-catalog-item">
+            <a href="#">
+              <header>
+                <h3>Repair Patches</h3>
+                <p>&#163; 150.50</p>
+              </header>
+              <img src="img/Repair_patches.jpg" alt="">
+            </a>
+          </article>
+          <article class="promo-catalog-item">
+            <a href="#">
+              <header>
+                <h3>Sale</h3>
+                <p>-70%</p>
+              </header>
+              <img src="img/bag.jpg" alt="">
+            </a>
+          </article>
+        </div>
+      <!-- </div> -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="footer__left-1">
+            <h3>Quick Links</h3>
+            <nav class="footer__left-nav-1">
+              <ul class="footer__left-nav-list">
+                <li class="footer__left-nav-items"><a href="#">Store locator</a></li>
+                <li class="footer__left-nav-items"><a href="#">Gift cards</a></li>
+                <li class="footer__left-nav-items"><a href="#">Size guide</a></li>
+                <li class="footer__left-nav-items"><a href="#">About us</a></li>
+                <li class="footer__left-nav-items"><a href="#">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__left-2">
+            <h3>Customer Care</h3>
+            <nav class="footer__left-nav-2">
+              <ul class="footer__left-nav-list">
+                <li class="footer__left-nav-items"><a href="#">Customer service</a></li>
+                <li class="footer__left-nav-items"><a href="#">Track my order</a></li>
+                <li class="footer__left-nav-items"><a href="#">Return policy</a></li>
+                <li class="footer__left-nav-items"><a href="#">Shipping & delivery</a></li>
+                <li class="footer__left-nav-items"><a href="#">Contact us</a></li>
+                <li class="footer__left-nav-items"><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-contact">
+            <div class="footer__right-twitter">
+              <h3>Questions</h3>
+              <p>Tweet us <strong><a href="#">@template</a></strong></p>
+            </div>
+            <div class="footer__right-phone">
+              <h3>Order by phone</h3>
+              <a href="tel:+8-800-409-47-12">8-800-409-47-12</a>
+            </div>
+          </div>
+          <div class="footer__right-delivery">
+            We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+          </div>
+          <div class="footer__right-socials">
+            <a href="#" title="FaceBook">
+              <img src="img/fb.png" alt="fb">
+            </a>
+            <a href="#" title="Twitter">
+              <img src="img/twi.png" alt="fb">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__down">
+        <div class="footer__copyright">
+          &copy; 2010–2015, The Template Group inc.
+        </div>
+        <div class="footer__share">
+          Share <span>1437</span>
+        </div>
+        <nav class="footer__site">
+          <ul class="footer__site-list">
+            <li class="footer__site-items"><a href="#">Legal notice </a></li>
+            <li class="footer__site-items"><a href="#">Privacy policy</a></li>
+            <li class="footer__site-items"><a href="#">Site map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="data/best-offer.js"></script>
+  <script src="data/catalog.js"></script>
+  <script src="js/drop_list.js"></script>
+
+
+  <section class="products products--small">
+    <div class="wrp products__wrp">
+      <article class="promo__article products__promo">
+        <header>
+          <h3 class="heading">Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</h3>
+          <p class="cursive">This offer is valid in-store and online. Prices displayed reflect this additional
+            discount. This offer ends at 11:59 GMT on March 1st 2019</p>
+        </header>
+      </article>
+    </div>
+  </section>
+</body>
+
+</html>

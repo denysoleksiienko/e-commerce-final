@@ -18,7 +18,7 @@
         <div class="header__wrap-top">
           <div class="header__logo"><a href="starts.html">Template</a></div>
           <div class="header__signup"><a href="#">E-mail sing up</a></div>
-          <div class="header__bag"><a href="#">Bag (<span id="bagCount">0</span>)</a></div>
+          <div class="header__bag"><a href="shopping-bag.html">Bag (<span id="bagCount">0</span>)</a></div>
           <div class="header__nav-btn">
             <div></div>
             <div></div>
@@ -28,14 +28,14 @@
         <div class="header__wrap-bottom">
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li class="header__nav-items"><a href="">Women</a></li>
-              <li class="header__nav-items"><a href="">Men</a></li>
-              <li class="header__nav-items"><a href="">Handbags</a></li>
-              <li class="header__nav-items"><a href="">Accessories</a></li>
-              <li class="header__nav-items"><a href="">Sale</a></li>
-              <li class="header__nav-items"><a href="">New Arrivals</a></li>
-              <li class="header__nav-items"><a href="">Clearance</a></li>
-              <li class="header__nav-items"><a href="">Store Locator</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Women</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Men</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Handbags</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Accessories</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Sale</a></li>
+              <li class="header__nav-items"><a href="catalog.html">New Arrivals</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Clearance</a></li>
+              <li class="header__nav-items"><a href="catalog.html">Store Locator</a></li>
             </ul>
           </nav>
           <div class="header__search">
@@ -50,13 +50,13 @@
       <div class="container">
         <div class="banner__container">
           <div class="banner__left">
-            <a href="#">
+            <a href="catalog.html">
               <h2>Nike Red</h2>
               <img src="img/banner__left.jpg" alt="nike red">
             </a>
           </div>
           <div class="banner__right">
-            <a href="#">
+            <a href="catalog.html">
               <h2>Caps & Hats</h2>
               <span>Sale -50%</span>
               <img src="img/banner__right.jpg" alt="caps and hats">
@@ -75,48 +75,183 @@
               ends
               at 11:59 GMT on March 1st 2019</p>
           </div>
-          <div class="offer__wrap-card">
-            <div class="offer__left">
-              <button class="arrow-up"></button>
-              <img src="img/offer_1.png" alt="img offer">
-              <div class="item__info">
-                <p class="item__info-name">Only Skinny Jeans</p>
-                <p class="item__info-price">&#163; 65.50</p>
+          <div id="offer">
+            <div class="offer__wrap-card">
+              <div class="offer__left">
+                <div class="offer__left-img">
+                  <div class="slider">
+                    <button class="arrow-up"></button>
+                    <div class="slider__wrapper"></div>
+                    <button class="arrow-down"></button>
+                  </div>
+                </div>
               </div>
-              <button class="arrow-down"></button>
-            </div>
-            <div class="offer__plus">
-              +
-            </div>
-            <div class="offer__right">
-              <button class="arrow-up"></button>
-              <img src="img/offer_2.png" alt="img offer">
-              <div class="item__info">
-                <p class="item__info-name">Levi’s Jeans for women</p>
-                <p class="item__info-price">&#163; 95.50</p>
+              <div class="offer__plus">
+                +
               </div>
-              <button class="arrow-down"></button>
-            </div>
-            <div class="offer_equally">
-              =
-            </div>
-            <div class="offer__result">
-              <p class="offer__old-price">&#163; 161.00</p>
-              <p class="offer__new-price">&#163; 146.00</p>
-              <button class="offer__add-bag">Add to bag</button>
+              <div class="offer__right">
+                <div class="offer__right-img">
+                  <div class="slider">
+                    <button class="arrow-up"></button>
+                    <div class="slider__wrapper"></div>
+                    <button class="arrow-down"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="offer_equally">
+                =
+              </div>
+              <div class="offer__result">
+                <div class="offer__price">
+                  <div id="result">
+                    <div>
+                      <p id="oldPrice" class="offer__old-price"></p>
+                      <p id="newPrice" class="offer__new-price"></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="offer__add-bag">Add to bag</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-
-
+    <section class="arrivals">
+      <div class="container">
+        <div class="arrivals__wrap">
+          <div class="arrivals__wrap-header">
+            <h1>New arrivals</h1>
+          </div>
+          <div class="arrivals__wrap-card">
+            <div class="arrivals__card">
+              <div class="arrivals-img">
+                <a href="catalog.html">
+                  <img src="img/Only_Skinny_Jeans.jpg" alt="">
+                </a>
+              </div>
+              <div class="item__info">
+                <p class="item__info-name">Only Skinny Jeans</p>
+                <p class="item__info-price">&#163; 65.50</p>
+              </div>
+            </div>
+            <div class="arrivals__card">
+              <div class="arrivals-img">
+                <a href="catalog.html">
+                  <img src="img/Neck_Knitted_Jumper.jpg" alt="">
+                </a>
+              </div>
+              <div class="item__info">
+                <p class="item__info-name">Neck Knitted Jumper</p>
+                <p class="item__info-price">&#163; 76.25</p>
+              </div>
+            </div>
+            <div class="arrivals__card">
+              <div class="arrivals-img">
+                <a href="catalog.html">
+                  <img src="img/Turtle_Neck_Jumper_in_Rib.jpg" alt="">
+                </a>
+              </div>
+              <div class="item__info">
+                <p class="item__info-name">Turtle Neck Jumper in Rib</p>
+                <p class="item__info-price">&#163; 130.25</p>
+              </div>
+            </div>
+            <div class="arrivals__card">
+              <div class="arrivals-img">
+                <a href="catalog.html">
+                  <img src="img/With_Patchwork_Crochet.jpg" alt="">
+                </a>
+              </div>
+              <div class="item__info">
+                <p class="item__info-name">With Patchwork Crochet</p>
+                <p class="item__info-price">&#163; 80.60</p>
+              </div>
+            </div>
+          </div>
+          <div class="arrivals__button"><a href="#">All arrivals</a></div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="footer__left-1">
+            <h3>Quick Links</h3>
+            <nav class="footer__left-nav-1">
+              <ul class="footer__left-nav-list">
+                <li class="footer__left-nav-items"><a href="#">Store locator</a></li>
+                <li class="footer__left-nav-items"><a href="#">Gift cards</a></li>
+                <li class="footer__left-nav-items"><a href="#">Size guide</a></li>
+                <li class="footer__left-nav-items"><a href="#">About us</a></li>
+                <li class="footer__left-nav-items"><a href="#">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__left-2">
+            <h3>Customer Care</h3>
+            <nav class="footer__left-nav-2">
+              <ul class="footer__left-nav-list">
+                <li class="footer__left-nav-items"><a href="#">Customer service</a></li>
+                <li class="footer__left-nav-items"><a href="#">Track my order</a></li>
+                <li class="footer__left-nav-items"><a href="#">Return policy</a></li>
+                <li class="footer__left-nav-items"><a href="#">Shipping & delivery</a></li>
+                <li class="footer__left-nav-items"><a href="#">Contact us</a></li>
+                <li class="footer__left-nav-items"><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-contact">
+            <div class="footer__right-twitter">
+              <h3>Questions</h3>
+              <p>Tweet us <strong><a href="#">@template</a></strong></p>
+            </div>
+            <div class="footer__right-phone">
+              <h3>Order by phone</h3>
+              <a href="tel:+8-800-409-47-12">8-800-409-47-12</a>
+            </div>
+          </div>
+          <div class="footer__right-delivery">
+            We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+          </div>
+          <div class="footer__right-socials">
+            <a href="#" title="FaceBook">
+              <img src="img/fb.png" alt="fb">
+            </a>
+            <a href="#" title="Twitter">
+              <img src="img/twi.png" alt="fb">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__down">
+        <div class="footer__copyright">
+          &copy; 2010–2015, The Template Group inc.
+        </div>
+        <div class="footer__share">
+          Share <span>1437</span>
+        </div>
+        <nav class="footer__site">
+          <ul class="footer__site-list">
+            <li class="footer__site-items"><a href="#">Legal notice </a></li>
+            <li class="footer__site-items"><a href="#">Privacy policy</a></li>
+            <li class="footer__site-items"><a href="#">Site map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
 
   <script src="data/best-offer.js"></script>
   <script src="data/catalog.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/offer.js"></script>
 </body>
 
 </html>

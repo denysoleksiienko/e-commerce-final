@@ -1,0 +1,127 @@
+@media screen and (max-width: 768px) {
+  .header {
+    width: 48rem;
+    height: 7.5rem;
+  }
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .header__logo {
+    width: 27.75rem;
+    height: 1.688rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.049rem;
+  }
+  .header__signup {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 4.063rem;
+    letter-spacing: 0.023rem;
+  }
+  .header__nav {
+    margin: 0;
+    width: 39rem;
+  }
+  .header__nav-list {
+    width: 38.938rem;
+  }
+  .header__nav-items {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.023rem;
+  }
+  .header__search input {
+    display: none;
+    margin: 0;
+  }
+  .header__search::after {
+    content: '';
+    display: block;
+    width: 0.813rem;
+    height: 0.813rem;
+    position: absolute;
+    background-image: url(../img/ico_search.svg);
+    background-repeat: no-repeat;
+    top: -10px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 23.438rem;
+    height: 4.375rem;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__wrap-top::before {
+    content: 'TL';
+    width: 1.75rem;
+    height: 1.125rem;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    text-transform: uppercase;
+    letter-spacing: 0.045rem;
+  }
+  .header__nav-btn {
+    display: block;
+  }
+  .header__wrap-bottom {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .filter__category, #filter__drop {
+    height: 55px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .filter__category, #filter__drop {
+    height: 65px;
+  }
+  #filter__drop {
+    position: relative;
+  }
+  .filter--drop #filter__drop {
+    position: absolute;
+  }
+}
+
+@media (max-width:1023px) {
+  #filter__drop {
+    display: block;
+    width: 20px;
+    padding: 0 15px;
+    left: 100%;
+    margin-left: -50px;
+    background-color: white;
+    box-shadow: -10px 3px 6px 0 white;
+  }
+  .filter--drop #filter__drop {
+    background-image: url('../img/ico_close.svg');
+    background-size: 12px;
+  }
+}
+
+@media (min-width:1024px) {
+  #filter__drop {
+    display: none;
+  }
+}
