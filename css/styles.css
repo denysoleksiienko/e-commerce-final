@@ -45,7 +45,6 @@ ul, li {
 .header__logo {
   margin: 0;
   width: 56.938rem;
-  color: #000000;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 4.063rem;
@@ -55,7 +54,6 @@ ul, li {
 .header__signup {
   margin: 0;
   width: 6.875rem;
-  color: #000000;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -65,7 +63,6 @@ ul, li {
 
 .header__bag {
   margin: 0;
-  color: #000000;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -249,23 +246,6 @@ ul, li {
   position: relative;
 }
 
-.offer__left-img::before {
-  display: block;
-  content: 'new';
-  width: 3.313rem;
-  height: 1.625rem;
-  background-color: #f14a58;
-  padding-top: 5px;
-  position: absolute;
-  top: 145px;
-  color: #fff;
-  font-family: "Roboto";
-  font-size: 0.813rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.024rem;
-}
-
 .arrow-up {
   background-image: url(../img/button_up.png);
   background-repeat: no-repeat;
@@ -287,6 +267,33 @@ button.arrow-up, button.arrow-down {
 
 button.arrow-up {
   margin: 70px 0 40px 0;
+}
+
+.slider__wrapper {
+  position: relative;
+}
+
+.product__img::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  color: #fc4e52;
+}
+
+.product__img:hover::after {
+  content: "View item";
+  background-color: rgba(71, 71, 71, 0.5);
+  height: 77%;
+  width: 100%;
 }
 
 .item__info {
@@ -386,7 +393,6 @@ button.offer__add-bag:active {
 
 .arrivals__wrap {
   border-top: 0.06rem solid #e5e5e5;
-  border-bottom: 0.06rem solid #e5e5e5;
 }
 
 .arrivals__wrap-header {
@@ -410,7 +416,7 @@ button.offer__add-bag:active {
   position: relative;
 }
 
-.arrivals__card:nth-child(-n+2)::before {
+.product[data-new="true"] .arrivals__card::before {
   display: block;
   content: 'new';
   width: 3.313rem;
@@ -455,6 +461,7 @@ button.offer__add-bag:active {
 .footer__wrap {
   display: flex;
   justify-content: space-between;
+  border-top: 0.06rem solid #e5e5e5;
   border-bottom: 0.06rem solid #e5e5e5;
   padding: 50px 0 100px 0;
 }
@@ -652,6 +659,10 @@ button.offer__add-bag:active {
   cursor: pointer;
 }
 
+.filter__checked h4 {
+  display: none;
+}
+
 .filter__category-checked .filter__checked {
   display: block;
   color: #fc4e52;
@@ -669,7 +680,7 @@ button.offer__add-bag:active {
 .filter__option-list {
   /* border: 1px solid green; */
   /* display: none; */
-  z-index: 1;
+  z-index: 10;
   position: relative;
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -715,7 +726,6 @@ button.offer__add-bag:active {
 .promo__catalog-list {
   display: flex;
   border-top: 0.06rem solid #e5e5e5;
-  border-bottom: 0.06rem solid #e5e5e5;
 }
 
 .promo-catalog-item {
@@ -809,12 +819,56 @@ button.offer__add-bag:active {
 }
 
 .preview {
-  flex-basis: 100%;
+  flex-basis: 67%;
 }
 
 .thumbnail {
   flex-basis: 33.3%;
   flex-grow: 0;
+  cursor: pointer;
+}
+
+/*  */
+
+.arrivals__card {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+}
+
+.arrivals-img::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  color: #fc4e52;
+}
+
+.product:hover .arrivals-img::after {
+  content: "View item";
+  background-color: rgba(71, 71, 71, 0.5);
+  height: 340px;
+  width: 240px;
+}
+
+/*  */
+
+.thumbnail[data-active='true'] .thumbnail__img::after {
+  background-color: rgba(71, 71, 71, 0.5);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 .product__details-info h2 {
@@ -867,7 +921,147 @@ button.offer__add-bag:active {
   text-align: center;
 }
 
-.size-selected {
+.selected {
   box-shadow: 1px 1px 5px #606060;
   color: #f14a58;
+}
+
+.current__page {
+  height: 4.063rem;
+  border-top: 0.06rem solid #e5e5e5;
+  border-bottom: 0.06rem solid #e5e5e5;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.03rem;
+}
+
+.bag__products-wrap {
+  margin: 30px 0 117px 0;
+}
+
+.arrivals__card:hover .product__img::after {
+  content: "Edit item";
+  background-color: rgba(71, 71, 71, 0.5);
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+}
+
+.delivery__info p {
+  background-color: #f7f7f7;
+  box-shadow: inset 0.063rem 0.063rem 0 #e5e5e5;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.023rem;
+}
+
+.delivery__info span, #discount, .control, .product__remove {
+  color: #fc4e52;
+}
+
+.control, .product__remove {
+  cursor: pointer;
+}
+
+.control {
+  border: none;
+  background: white;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  outline: none;
+}
+
+.product--bag {
+  display: flex;
+  position: relative;
+}
+
+.product--bag .product__img {
+  margin: 0;
+}
+
+.product--bag__details {
+  padding-left: 2%;
+  width: 100%;
+}
+
+.product--bag__details * {
+  text-align: left;
+}
+
+.product__title {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.026rem;
+  margin-bottom: 20px;
+}
+
+.product__price {
+  font-family: "Roboto";
+  font-size: 1.063rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.031rem;
+}
+
+.product--bag__details .color, .product--bag__details .size, .product--bag__details #amount {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.023rem;
+}
+
+.product__remove {
+  margin-top: 40px;
+}
+
+.bag__checkout .bag__checkout-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.bag__checkout {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag__empty {
+  font-family: "Roboto";
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.024rem;
+}
+
+.bag__total {
+  font-family: "Roboto";
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.041rem;
+}
+
+.bag__total #total {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+  letter-spacing: 0.045rem;
+}
+
+.product--bag {
+  flex-basis: 50%;
+}
+
+.product--bag>a {
+  display: block;
 }

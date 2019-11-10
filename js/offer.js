@@ -12,12 +12,11 @@ for (let i = 0; i < window.catalog.length; i++) {
 
   }
 }
-
 right = right.reverse();
+
 let slider_wrp = document.getElementsByClassName('slider__wrapper');
 let sliders = document.getElementsByClassName('slider');
-let addToBag = document.querySelector('.offer__add-bag');
-addToBag.addEventListener('click', clickAddToBag);
+
 createSlides(left, slider_wrp[0], 0);
 createSlides(right, slider_wrp[1], 1);
 countPrice();
@@ -87,37 +86,3 @@ function countPrice() {
   document.getElementById('newPrice').innerHTML = "\xA3".concat(price - window.bestOffer.discount);
 }
 
-function clickAddToBag(e) {
-  let products = document.querySelectorAll('[data-active="true"]');
-  let product1 = {
-    id: products[0].getAttribute('data-id'),
-    price: products[0].getAttribute('data-price'),
-    thumbnail: products[0].querySelector('img').getAttribute('src'),
-    title: products[0].querySelector('.product__title').innerHTML
-  };
-  let product2 = {
-    id: products[1].getAttribute('data-id'),
-    price: products[1].getAttribute('data-price'),
-    thumbnail: products[1].querySelector('img').getAttribute('src'),
-    title: products[1].querySelector('.product__title').innerHTML
-  };
-
-  for (let _i = 0; _i < left.length; _i++) {
-    if (left[_i].id === product1.id) {
-      product1.size = left[_i].sizes[0];
-      product1.color = left[_i].colors[0];
-      break;
-    }
-  }
-
-  for (let _i2 = 0; _i2 < right.length; _i2++) {
-    if (right[_i2].id === product2.id) {
-      product2.size = right[_i2].sizes[0];
-      product2.color = right[_i2].colors[0];
-      break;
-    }
-  }
-
-  addToShoppingBag(product1);
-  addToShoppingBag(product2);
-}

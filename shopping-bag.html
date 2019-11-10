@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -16,9 +17,10 @@
     <div class="container">
       <div class="header__wrap">
         <div class="header__wrap-top">
-          <div class="header__logo"><a href="starts.html">Template</a></div>
+          <div class="header__logo"><a href="start.html">Template</a></div>
           <div class="header__signup"><a href="#">E-mail sing up</a></div>
-          <div class="header__bag"><a href="shopping-bag.html">Bag (<span id="bagCount">0</span>)</a></div>
+          <div class="header__bag"><a href="shopping-bag.html">Bag &#163;<span id="bagSum">180.6</span>(<span
+                id="bagCount">1</span>)</a></div>
           <div class="header__nav-btn">
             <div></div>
             <div></div>
@@ -48,13 +50,54 @@
 
   <main class="main">
     <div class="container">
-      <div class="main__back">
+      <div class="current__page">
         <h3><a href="shopping-bag.html">Shopping bag</a></h3>
       </div>
+
+      <section class="bag__products">
+        <div class="bag__products-wrap" id="bagProducts">
+          <article class="product product--bag" data-new="undefined" data-id="80d32566-d81c-4ba0-9edf-0eceda3b4360">
+            <div class="arrivals__card">
+
+              <a href="item.html">
+                <figure class="product__img">
+                  <img src="img/full_bag.jpg">
+                </figure>
+              </a>
+            </div>
+            <div class="product--bag__details">
+              <h4 class="product__title">Dark classic fit suit</h4>
+              <span>&#163;</span><span class="price product__price amount">180.6</span>
+              <p class="color">Color: Blue</p>
+              <p class="size">Size: UK 54</p>
+              <div id="amount">
+                Quantity:
+                <button class="minus control">&minus;</button>
+                <span class="quantity">1</span>
+                <button class="plus control">&#43;</button>
+              </div>
+              <p class="product__remove">Remove item</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="delivery__info">
+        <p>You've qualified for Free UK Next Day Delivery on your order. Don't forget to enter the code
+          <span>nexday</span> at checkout</p>
+      </div>
+      <section class="bag__checkout">
+        <div class="bag__checkout-wrap">
+          <a href="#" class="bag__empty" id="emptyBag">Empty bag</a>
+          <a href="#" class="arrivals__button" id="checkout">Checkout</a>
+          <div>
+            <h2 class="price" id="discount"></h2>
+            <h2 class="small-heading bag__total">Total price: &#163;<span id="total">180.6</span></h2>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
-
-
 
   <footer class="footer">
     <div class="container">
@@ -127,10 +170,9 @@
       </div>
     </div>
   </footer>
-  <script src="data/best-offer.js"></script>
   <script src="data/catalog.js"></script>
-  <script src="js/drop_list.js"></script>
-  <script src="js/items.js"></script>
+  <script src="data/best-offer.js"></script>
+  <script src="js/shopBag.js"></script>
 </body>
 
 </html>

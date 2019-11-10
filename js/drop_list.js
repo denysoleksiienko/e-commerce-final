@@ -18,18 +18,18 @@
 /**/
 
 // Second variant
-let blocks = document.querySelectorAll(".filter__category");
+let blocks = document.querySelectorAll('.filter__category');
 
-[].forEach.call(blocks, function (item) {
-  item.addEventListener("click", function () {
-    if (item.lastElementChild.classList.contains("open")) {
-      item.lastElementChild.classList.remove("open");
+[].forEach.call(blocks, item => {
+  item.addEventListener('click', function () {
+    if (item.lastElementChild.classList.contains('open')) {
+      item.lastElementChild.classList.remove('open');
     } else {
-      let del = document.querySelectorAll(".open");
-      del.forEach(e => {
-        e.classList.remove("open");
+      let del = document.querySelectorAll('.open');
+      del.forEach(event => {
+        event.classList.remove('open');
       });
-      item.lastElementChild.classList.add("open");
+      item.lastElementChild.classList.add('open');
     }
   });
 });
@@ -38,9 +38,9 @@ let blocks = document.querySelectorAll(".filter__category");
 const filterList = document.querySelector('#filter');
 filterList.addEventListener('change', event => {
   const listName = document.getElementById(event.target.name);
-  const checked = document.getElementById("".concat(event.target.name, "__checked"));
+  const checked = document.getElementById(''.concat(event.target.name, '__checked'));
 
-  if (event.target.value != "Not selected") {
+  if (event.target.value != 'Not selected') {
     listName.classList.add('filter__category-checked');
     checked.textContent = event.target.value;
   } else {
@@ -48,3 +48,4 @@ filterList.addEventListener('change', event => {
     checked.textContent = listName.getAttribute('data-category');
   }
 });
+

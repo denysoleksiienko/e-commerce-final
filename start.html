@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -16,9 +17,10 @@
     <div class="container">
       <div class="header__wrap">
         <div class="header__wrap-top">
-          <div class="header__logo"><a href="starts.html">Template</a></div>
+          <div class="header__logo"><a href="start.html">Template</a></div>
           <div class="header__signup"><a href="#">E-mail sing up</a></div>
-          <div class="header__bag"><a href="shopping-bag.html">Bag (<span id="bagCount">0</span>)</a></div>
+          <div class="header__bag"><a href="shopping-bag.html">Bag <span id="bagSum"></span> (<span
+                id="bagCount">0</span>)</a></div>
           <div class="header__nav-btn">
             <div></div>
             <div></div>
@@ -49,7 +51,7 @@
     <section class="banner">
       <div class="container">
         <div class="banner__container">
-          <div class="banner__left">
+          <div class="banner__left promo__item">
             <a href="item.html">
               <h2>Nike Red</h2>
               <img src="img/banner__left.jpg" alt="nike red">
@@ -110,12 +112,13 @@
                     </div>
                   </div>
                 </div>
-                <button class="offer__add-bag">Add to bag</button>
+                <a href="shopping-bag.html" id="addToBag">
+                  <button class="offer__add-bag">Add to bag</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -126,50 +129,58 @@
             <h1>New arrivals</h1>
           </div>
           <div class="arrivals__wrap-card">
-            <div class="arrivals__card">
-              <div class="arrivals-img">
-                <a href="catalog.html">
-                  <img src="img/Only_Skinny_Jeans.jpg" alt="">
+            <article class="product" data-new="true" data-id="8c061815-6a7d-4465-bb78-1bdc6c5adebf">
+              <div class="arrivals__card">
+                <a href="item.html">
+                  <div class="arrivals-img">
+                    <img src="img/Only_Skinny_Jeans.jpg" alt="">
+                  </div>
+                  <div class="item__info">
+                    <p class="item__info-name product__title">Only Skinny Jeans</p>
+                    <p class="item__info-price product__price">&#163; 65.50</p>
+                  </div>
                 </a>
               </div>
-              <div class="item__info">
-                <p class="item__info-name">Only Skinny Jeans</p>
-                <p class="item__info-price">&#163; 65.50</p>
-              </div>
-            </div>
-            <div class="arrivals__card">
-              <div class="arrivals-img">
-                <a href="catalog.html">
-                  <img src="img/Neck_Knitted_Jumper.jpg" alt="">
+            </article>
+            <article class="product" data-new="true" data-id="8b300772-eee3-4ff1-b091-e89f17e0e469">
+              <div class="arrivals__card">
+                <a href="item.html">
+                  <div class="arrivals-img">
+                    <img src="img/Neck_Knitted_Jumper.jpg" alt="">
+                  </div>
+                  <div class="item__info">
+                    <p class="item__info-name product__title">Neck Knitted Jumper</p>
+                    <p class="item__info-price product__price">&#163; 76.25</p>
+                  </div>
                 </a>
               </div>
-              <div class="item__info">
-                <p class="item__info-name">Neck Knitted Jumper</p>
-                <p class="item__info-price">&#163; 76.25</p>
-              </div>
-            </div>
-            <div class="arrivals__card">
-              <div class="arrivals-img">
-                <a href="catalog.html">
-                  <img src="img/Turtle_Neck_Jumper_in_Rib.jpg" alt="">
+            </article>
+            <article class="product" data-id="9ded7821-e510-4a16-ba9f-57c1e3442ad8">
+              <div class="arrivals__card">
+                <a href="item.html">
+                  <div class="arrivals-img">
+                    <img src="img/Turtle_Neck_Jumper_in_Rib.jpg" alt="">
+                  </div>
+                  <div class="item__info">
+                    <p class="item__info-name product__title">Turtle Neck Jumper in Rib</p>
+                    <p class="item__info-price product__price">&#163; 130.25</p>
+                  </div>
                 </a>
               </div>
-              <div class="item__info">
-                <p class="item__info-name">Turtle Neck Jumper in Rib</p>
-                <p class="item__info-price">&#163; 130.25</p>
-              </div>
-            </div>
-            <div class="arrivals__card">
-              <div class="arrivals-img">
-                <a href="catalog.html">
-                  <img src="img/With_Patchwork_Crochet.jpg" alt="">
+            </article>
+            <article class="product" data-id="739d3ae0-6dca-4453-a7a4-a94b841a296d">
+              <div class="arrivals__card">
+                <a href="item.html">
+                  <div class="arrivals-img">
+                    <img src="img/With_Patchwork_Crochet.jpg" alt="">
+                  </div>
+                  <div class="item__info">
+                    <p class="item__info-name">With Patchwork Crochet</p>
+                    <p class="item__info-price">&#163; 80.60</p>
+                  </div>
                 </a>
               </div>
-              <div class="item__info">
-                <p class="item__info-name">With Patchwork Crochet</p>
-                <p class="item__info-price">&#163; 80.60</p>
-              </div>
-            </div>
+            </article>
           </div>
           <div class="arrivals__button"><a href="catalog.html">All arrivals</a></div>
         </div>

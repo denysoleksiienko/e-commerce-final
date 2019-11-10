@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header {
     width: 48rem;
     height: 7.5rem;
@@ -123,5 +123,142 @@
 @media (min-width:1024px) {
   #filter__drop {
     display: none;
+  }
+} */
+
+@media (min-width:768px) and (max-width:1023px) {
+  .container {
+    width: 100%;
+    max-width: 690px;
+  }
+  .header__logo {
+    font-size: 1.625rem;
+    line-height: 4.063rem;
+    letter-spacing: 0.049rem;
+  }
+  .header__signup, .header__bag {
+    width: 26.5rem;
+    text-align: end;
+  }
+  .header__bag::after {
+    right: 0;
+  }
+  .header__nav {
+    margin: 0;
+    width: 38.938rem;
+    height: 0.75rem;
+  }
+  .header__nav-items {
+    font-size: 0.75rem;
+    letter-spacing: 0.023rem;
+    padding-left: 10px;
+  }
+  .header__nav-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header__search input {
+    display: none;
+  }
+  .header__search::after {
+    display: block;
+  }
+  .banner__left, .banner__right {
+    width: 21.813rem;
+    height: 14.438rem;
+  }
+  .banner__left img {
+    width: 20.813rem;
+    height: 14.188rem;
+  }
+  .banner__right img {
+    width: 11.813rem;
+    height: 14.188rem;
+  }
+  .banner__container h2 {
+    font-size: 1.375rem;
+    letter-spacing: 0.041rem;
+    top: 10px;
+    right: 30px;
+  }
+  .banner__container .banner__right span {
+    top: 4.5625rem;
+    right: 4.125rem;
+  }
+  .offer__wrap-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
+  }
+  .offer__left-img img, .offer__right-img img {
+    width: 13.75rem;
+    height: 18.063rem;
+  }
+  .slider__wrapper {
+    padding: 0 20px;
+  }
+  .item__info {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.026rem;
+  }
+  .item__info-name {
+    font-size: 0.875rem;
+    letter-spacing: 0.026rem;
+  }
+  .item__info-price {
+    font-size: 0.875rem;
+    letter-spacing: 0.026rem;
+  }
+  .offer__result {
+    position: relative;
+    padding: 0px 0px 80px 45px;
+  }
+  .offer__result button {
+    position: absolute;
+    bottom: -200px;
+    right: 175px;
+  }
+  .offer__new-price {
+    font-size: 1.875rem;
+    letter-spacing: 0.056rem;
+  }
+  .offer__old-price {
+    font-size: 1.375rem;
+    letter-spacing: 0.041rem;
+    left: -40px;
+  }
+  .arrivals__wrap-header {
+    margin: 80px 0;
+  }
+  .arrivals__wrap-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
+  }
+  .arrivals-img img {
+    width: 12.75rem;
+    height: 18.063rem;
+  }
+  .arrivals__wrap-card article:last-child {
+    display: none;
+  }
+  .footer__left {
+    width: 65%;
+    border: none;
+  }
+  .footer__right {
+    width: 35%;
+  }
+  .footer__right-delivery {
+    display: none;
+  }
+  .footer__right-contact {
+    display: block;
+  }
+  .footer__right-twitter {
+    margin: 0;
+  }
+  .footer__right-socials {
+    margin: 65px 0;
   }
 }
