@@ -35,5 +35,5 @@ const container = document.querySelector('#bagProducts');
 const checkout = document.querySelector('#checkout');
 checkout.addEventListener('click', event => {
   event.preventDefault();
-  container.innerHTML = "<h2 class='heading'>Thank you for your purchase!</h2>";
+  container.innerHTML = "<h2 class='heading' style='color: red'>Thank you for your purchase!</h2>";
 });
