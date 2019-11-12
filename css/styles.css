@@ -50,10 +50,13 @@ ul, li {
   line-height: 4.063rem;
   letter-spacing: 0.056rem;
 }
+.header__logo-mobile {
+  display: none;
+}
 
 .header__signup {
   margin: 0;
-  width: 6.875rem;
+  width: 7.875rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -94,7 +97,8 @@ ul, li {
 }
 
 .header__nav-btn {
-  width: 40px;
+  width: 25px;
+  height: 3px;
   display: none;
 }
 
@@ -322,7 +326,9 @@ button.arrow-up {
   line-height: 4.063rem;
   letter-spacing: 0.064rem;
 }
-
+.offer_equally-mob {
+  display: none;
+}
 .offer__result {
   display: flex;
   flex-direction: column;

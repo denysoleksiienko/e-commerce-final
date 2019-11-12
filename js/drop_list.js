@@ -21,7 +21,7 @@
 let blocks = document.querySelectorAll('.filter__category');
 
 [].forEach.call(blocks, item => {
-  item.addEventListener('click', function () {
+  item.addEventListener('mouseenter', function () {
     if (item.lastElementChild.classList.contains('open')) {
       item.lastElementChild.classList.remove('open');
     } else {

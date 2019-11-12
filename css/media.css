@@ -218,3 +218,259 @@
     letter-spacing: 0.038rem;
   }
 }
+
+@media (min-width:375px) and (max-width:767px) {
+  .container {
+    max-width: 334px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo-mobile {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.045rem;
+    margin: 0;
+  }
+  .header__signup {
+    display: none;
+  }
+  .header__nav-btn {
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .header__bag {
+    margin-right: 30px;
+  }
+  .header__wrap-bottom {
+    display: none;
+  }
+  .banner__left {
+    width: 40rem;
+    height: 14.938rem;
+  }
+  .banner__left img {
+    width: 20rem;
+    height: 14rem;
+  }
+  .banner__right {
+    display: none;
+  }
+  .banner__container h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: 0.041rem;
+    top: 10px;
+    right: 40px;
+  }
+  .offer {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .offer__wrap-card {
+    align-items: normal;
+    height: 280px;
+  }
+  .offer__wrap-header h1 {
+    font-size: 1.625rem;
+    letter-spacing: 0.049rem;
+  }
+  .offer__wrap-header p {
+    font-size: 0.875rem;
+  }
+  .offer__wrap-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
+  }
+  .offer__left-img img, .offer__right-img img {
+    width: 10rem;
+    height: 12rem;
+    padding: 0 10px 0 10px;
+  }
+  .slider__wrapper {
+    padding: 0;
+  }
+  button.arrow-up {
+    margin: 15px 0 25px 0;
+  }
+  .offer__plus, .offer_equally {
+    font-size: 1.625rem;
+    letter-spacing: 0.049rem;
+    align-self: center;
+  }
+  .offer_equally {
+    display: none;
+  }
+  .offer_equally-mob {
+    display: block;
+    font-family: "Roboto";
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 4.063rem;
+    letter-spacing: 0.049rem;
+    position: absolute;
+    right: 90px;
+  }
+  p.item__info-name {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.023rem;
+  }
+  p.item__info-price {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 4.063rem;
+    letter-spacing: 0.023rem;
+  }
+  .offer__result {
+    position: relative;
+    height: 180px;
+    top: 415px;
+    left: -270px;
+  }
+  .offer__price {
+    margin-bottom: 0;
+  }
+  .offer__old-price {
+    font-size: 1.125rem;
+    letter-spacing: 0.034rem;
+    left: 10px;
+  }
+  .offer__old-price::after {
+    top: 46px;
+    width: 3em
+  }
+  .offer__new-price {
+    font-size: 1.625rem;
+    letter-spacing: 0.049rem;
+  }
+  .offer__result button {
+    width: 13.75rem;
+    height: 4.688rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.038rem;
+  }
+  .arrivals__wrap-header {
+    margin: 50px 0;
+  }
+  .arrivals__wrap-header h1 {
+    font-size: 1.625rem;
+    letter-spacing: 0.049rem;
+  }
+  .arrivals-img img {
+    width: 9.875rem;
+    height: 13.938rem;
+  }
+  .arrivals__wrap-card article:nth-child(3), .arrivals__wrap-card article:nth-child(4) {
+    display: none;
+  }
+  .arrivals__button {
+    width: 13.75rem;
+    height: 4.688rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.034rem;
+    margin-top: 35px;
+    margin-bottom: 70px;
+  }
+  .arrivals-img::after {
+    display: none;
+  }
+  .footer__left {
+    display: block;
+  }
+  .main__back {
+    font-size: 0.75rem;
+    letter-spacing: 0.023rem;
+  }
+  .product__details-wrap {
+    display: block;
+    margin-top: 10px;
+  }
+  .product__details-preview {
+    width: 100%;
+  }
+  .preview img {
+    width: 20.938rem;
+    height: 13.938rem;
+  }
+  .product__details-info h2 {
+    font-size: 1.25rem;
+    letter-spacing: 0.038rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .product__details-info p {
+    width: 20.75rem;
+    height: 4.563rem;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    text-align: center;
+  }
+  .product__details-price {
+    font-size: 1.125rem;
+    letter-spacing: 0.034rem;
+  }
+  .product__details {
+    font-size: 0.875rem;
+    letter-spacing: 0.026rem;
+  }
+  button.offer__add-bag {
+    width: 13.75rem;
+    height: 3.875rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.034rem;
+    margin-top: 35px;
+    margin-bottom: 70px;
+  }
+  .promo-catalog-item:nth-child(2), .promo-catalog-item:last-child {
+    display: none;
+  }
+  .promo-catalog-item img {
+    width: 23.438rem;
+    height: 14.813rem;
+  }
+  .promo-catalog-item:first-child header {
+    top: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.038rem;
+  }
+  .product--bag .product__img img {
+    width: 9.875rem;
+    height: 11.938rem;
+  }
+  .bag__products-wrap {
+    margin: 30px 0 40px 0;
+  }
+  .bag__checkout-wrap .arrivals__button {
+    width: 17.75rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .footer__right-contact {
+    display: block;
+  }
+  .footer__wrap h3 {
+    font-size: 0.875rem;
+    letter-spacing: 0.026rem;
+  }
+  .footer__right-twitter {
+    margin: 0;
+    padding: 0;
+  }
+  .footer__right-twitter p::before {
+    top: 70px;
+  }
+  .footer__right-contact {
+    margin-left: 10px;
+  }
+  .footer__right-delivery {
+    display: none;
+  }
+  .footer__right-socials {
+    margin: 38px 0 0 10px;
+  }
+}
